@@ -1,0 +1,107 @@
+body{
+    font-family:  'Quicksand', sans-serif ;
+    font-weight: 300;
+    background:linear-gradient(to left, #4e5253, #020002);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.wrap{
+    left: 1000px;
+    position: relative;
+    display: inline-block;  
+    min-width: 400px;
+    min-height: 100px;
+    padding: 50px 15px;
+    background-color: rgb(221, 216, 216);
+    box-shadow: 0 5px 25px #d3c3c34a;
+    border-radius: 8px;
+    text-align: center;
+}
+.accordion-item{
+    background-color: blueviolet;
+    box-shadow: 0 2px 20px 0px rgb(6, 7, 10, 0.95);
+}
+.accordion-button{
+    background-color: cadetblue ;
+}
+
+
+#timer{
+    position: relative;
+    right: 0% ;
+    width: 250px;
+    height: 250px;
+    border-radius:  50%; 
+    line-height: 250px;
+    font-size: 32px;
+    margin: 0 auto;
+    background-color: rgb(179, 173, 173);
+}
+p{
+    font-weight: 400;
+    color: rgb(160, 153, 153);
+    padding: 20px 0;
+}
+.option a{
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+}
+#play, #reset{
+    
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    border-radius: 50px;
+    background:linear-gradient(45deg, #8d818d, #333033);
+    box-shadow: 0 8px 25px #a6a0a745, 0 8px 25px #b1abb0;
+    transition: all ease 0.1s;
+}
+#stop{
+    padding: 15px 20px;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: 400;
+    background:linear-gradient(45deg, #5f6568, #534f53);
+    box-shadow: 0 8px 25px #3d343d45, 0 8px 25px #63606250;
+    transition: all ease 0.1s;
+}
+#play:active , #reset:active, #stop:active{
+    transform:scale(0.95);
+}
+#stop .fa{
+    margin-right: 5px;
+
+}   
+.images{
+    display: inline-table;
+    width: 30%;
+}
+
+.fa-play{
+    padding-left: 5px;
+}
+
+#timer svg{
+    position: absolute;
+    left: 0;
+
+}
+
+.defaultCircle{
+    opacity: 0.3;
+    
+}
+#images{
+    position: relative;
+    right: 200px;
+}
+h1{
+    position: relative;
+    left: 100px;
+    color: rgb(90, 87, 76);
+}
