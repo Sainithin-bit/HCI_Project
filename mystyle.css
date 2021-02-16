@@ -99,6 +99,8 @@ p{
 #images{
     position: relative;
     right: 200px;
+    box-shadow: 0 -20px 20px 5px rgb(88, 84, 84);
+    border-radius: 10px; 
 }
 h1{
     position: relative;
