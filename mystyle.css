@@ -107,3 +107,41 @@ h1{
     left: 100px;
     color: rgb(90, 87, 76);
 }
+#visulization{
+    height: 50%;
+    width: 50%;
+    position: absolute;
+    top: 600px;
+    left: 200px;
+    box-shadow: 0 10px 10px 5px rgb(119, 116, 116);
+}
+.empty{
+    position: absolute;
+    top: 1000px;
+}
+.response-buttons{
+    position: absolute;
+    top: 150px;
+    left: 250px;
+    
+
+}
+.response-buttons-3{
+    position: absolute;
+    top: 50px;  
+    left: 270px;
+}
+#RED, #BLUE, #YELLOW, #GREEN, #BROWN, #ORANGE, #VOILET{
+    width: 80px;
+    height: 55px;
+    line-height: 55px;
+    transition: all ease 0.3s;
+
+}
+#RED:active, #BLUE:active, #YELLOW:active, #GREEN:active, #BROWN:active, #ORANGE:active, #VOILET:active{
+    
+    transform: scale(0.95);
+    
+    
+}
+

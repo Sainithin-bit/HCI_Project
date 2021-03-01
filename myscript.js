@@ -92,4 +92,82 @@ function stopfun(){
     clearInterval(base);
     
 }
+var correct=0;
+var wrong=0;
+var locater=0;
+var level1=["red", "orange", "voilet", "green", "brown", "yellow", "orange"," blue", "green", "orange", "blue",
+            "green", "red", "voilet", "orange", "green", "brown", "yellow", "brown", "yellow", "orange", "blue", "green", 
+             "red", "orange", "voilet", "ornage", "green", "red", "orange", "voilet", "orange", "green", "brown", "yellow", 
+            "orange", "blue", "green", "red"];
+function red(){
+    if(level1[locater]=="red"){
+        correct++;
+    }
+    locater++;
+    barchart();
+}
+function blue(){
+    if(level1[locater]=="red"){
+        correct++;
+    }
+    locater++;
+    barchart();
+}
+function green(){
+    if(level1[locater]=="red"){
+        correct++;
+    }
+    locater++;
+    barchart();
+}
+function orange(){
+    if(level1[locater]=="red"){
+        correct++;
+    }
+    locater++;
+    barchart();
+}
+function violet(){
+    if(level1[locater]=="red"){
+        correct++;
+    }
+    locater++;
+    barchart();
+}
+function yellow(){
+    if(level1[locater]=="red"){
+        correct++;
+    }
+    locater++;
+    barchart();
+}
+function brown(){
+    if(level1[locater]=="red"){
+        correct++;
+    }
+    locater++;
+    barchart();
+}
 
+anychart.onDocumentReady(function barchart() {
+ 
+    var data = {
+        header: ["", "Score"],
+        rows: [
+          ["Correct", 200],
+          ["Wrong", 10  ]
+    ]};
+
+    // create the chart
+    var chart = anychart.bar();
+
+    // add the data
+    chart.data(data);
+
+    // set the chart title
+    chart.title("The deadliest earthquakes in the XXth century");
+
+    // draw
+    chart.container("visulization");
+    chart.draw();
+  });
